@@ -10,11 +10,18 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Portfolio</h1>
+        <h1>Sintija Mārtinsone</h1>
       </header>
+      <text classname="text">
+        <h1>Veidotie darbi</h1>
+        <h2>links </h2>
+        <h2>links </h2>
+        <h2>links </h2>
+      </text>
     </div>
   );
 }
+
 
 export default App;
 
