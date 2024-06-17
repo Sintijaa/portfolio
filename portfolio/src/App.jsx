@@ -1,13 +1,14 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import Mail from './view/mail';
 import './App.css'
 
 import React from 'react';
-import './App.css';
 
 function App() {
   return (
+    <>
     <div className="App">
       <header className="App-header">
         <h1>Sintija Mārtinsone</h1>
@@ -19,6 +20,8 @@ function App() {
         <h2>links </h2>
       </text>
     </div>
+    <Mail />
+</>
   );
 }
 
