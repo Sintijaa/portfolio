@@ -1,28 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import Mail from './view/mail';
-import './App.css'
-
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import AboutMe from '../AboutMe';
+import Work from '../Work'; 
+import Projects from '../Projects'; 
 
-function App() {
+const App = () => {
   return (
-    <>
-    <div className="App">
-      <header className="App-header">
-      
-      </header>
-      <text classname="text">
-       
-      </text>
-    </div>
-    <Mail />
-</>
+    <Router>
+      <Switch>
+        <Route path="/App" component={Home} />
+        <Route path="/AboutMe" component={AboutMe} />
+        <Route path="/Work" component={Work} />
+        <Route path="/Projects" component={Projects} />
+      </Switch>
+    </Router>
   );
-}
+};
 
 
 export default App;
-
-
