@@ -1,18 +1,16 @@
 import React from 'react';
-import './styles.css';
-import { useHistory } from 'react-router-dom';
+
 
 const AboutMe = () => {
-  const history = useHistory();
 
   return (
     <div>
       <header className="App-header">
         <h1>About Me</h1>
         <div className="nav-buttons">
-          <button onClick={() => history.push('/App')}>Sākums</button>
-          <button onClick={() => history.push('/work')}>Atsauksmes</button>
-          <button onClick={() => history.push('/projects')}>Darītie Darbi</button>
+            <a href='/'><button>Sākums</button></a>
+            <a href='/'><button>Atsauksmes</button></a>
+            <a href='/'><button>Darītie darbi</button></a>
         </div>
       </header>
       <section className="box">
@@ -20,6 +18,8 @@ const AboutMe = () => {
         <p>Es esmu Sintija un es apgūstu profesiju "Programmēšanas tenhiķis" Vidzemes tehnoloģiju un dizaina tehnikumā</p>
       </section>
     </div>
+
+    
   );
 }
 

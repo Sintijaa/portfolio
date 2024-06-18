@@ -1,21 +1,19 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import AboutMe from '../AboutMe';
-import Work from '../Work'; 
-import Projects from '../Projects'; 
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import AboutMe from './components/AboutMe';
+import Work from './components/Work'; 
+import Header from './components/Header'; 
+import Projects from './components/Projects';  
 
 const App = () => {
   return (
-    <Router>
-      <Switch>
-        <Route path="/App" component={Home} />
-        <Route path="/AboutMe" component={AboutMe} />
-        <Route path="/Work" component={Work} />
-        <Route path="/Projects" component={Projects} />
-      </Switch>
-    </Router>
+    <BrowserRouter>
+      <div>
+        <Header /> 
+        
+      </div>
+    </BrowserRouter>
   );
 };
-
 
 export default App;
